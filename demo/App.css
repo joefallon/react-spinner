@@ -1,0 +1,10 @@
+/* App.scss */
+/* _variables.scss */
+h2 {
+    text-align: center;
+}
+
+.demo-spinner-wrapper {
+    float: left;
+    padding-right: 24px;
+}

@@ -1,0 +1,15 @@
+/* Spinner.scss */
+@import "../static/styles/variables";
+
+@-webkit-keyframes circle {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes circle {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
