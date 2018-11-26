@@ -2,8 +2,10 @@
   "name": "@joefallon/react-spinner",
   "version": "0.0.0",
   "description": "A simple, sizable, and delayable spinner component for React.js.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
   "scripts": {
+    "build:dist": "tsc",
     "build:dev": "npm run clean && npm run webpack -- --config webpack.dev.js",
     "build:prod": "npm run clean && npm run webpack -- --config webpack.prod.js",
     "clean": "rm -rf public",
@@ -34,20 +36,20 @@
     "@types/mini-css-extract-plugin": "^0.2.0",
     "@types/optimize-css-assets-webpack-plugin": "^1.3.3",
     "@types/uglifyjs-webpack-plugin": "^1.1.0",
-    "@types/webpack": "^4.4.17",
+    "@types/webpack": "^4.4.19",
     "@types/webpack-env": "^1.13.6",
     "@types/webpack-merge": "^4.1.3",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
     "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.4.4",
+    "mini-css-extract-plugin": "^0.4.5",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^5.3.0",
     "tslib": "^1.9.3",
     "typescript": "^3.1.6",
     "uglifyjs-webpack-plugin": "^2.0.1",
-    "webpack": "^4.25.1",
+    "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2",
     "webpack-command": "^0.4.2",
     "webpack-dev-server": "^3.1.10",
@@ -55,9 +57,9 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "@types/react": "^16.4.18",
-    "@types/react-dom": "^16.0.9",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "@types/react": "^16.7.7",
+    "@types/react-dom": "^16.0.10",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   }
 }
